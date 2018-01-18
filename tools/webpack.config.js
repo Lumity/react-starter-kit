@@ -106,6 +106,7 @@ const config = {
           ],
           plugins: [
             'transform-decorators-legacy',
+            'transform-class-properties',
             // Treat React JSX elements as value types and hoist them to the highest scope
             // https://github.com/babel/babel/tree/master/packages/babel-plugin-transform-react-constant-elements
             ...(isDebug ? [] : ['@babel/transform-react-constant-elements']),
